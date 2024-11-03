@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"AFK-craft - Главная страница"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="page__container">
+				<div class="h2">Categories</div>
+				<div class="page__categories categories">
+					<a href="#" class="categories__item item-categories">
+						<div class="item-categories__img-ibg">
+							<img src="@img/1x1.png" data-src="@img/catalog/1.jpg" alt="">
+						</div>
+						<div class="item-categories__title">Turtle WoW</div>
+					</a>
+					<a href="#" class="categories__item item-categories">
+						<div class="item-categories__img-ibg">
+							<img src="@img/1x1.png" data-src="@img/default.png" alt="">
+						</div>
+						<div class="item-categories__title">Sale & Discount</div>
+					</a>
+					<a href="#" class="categories__item item-categories">
+						<div class="item-categories__img-ibg">
+							<img src="@img/1x1.png" data-src="@img/catalog/3.jpg" alt="">
+						</div>
+						<div class="item-categories__title">Sale & Discount</div>
+					</a>
+					<a href="#" class="categories__item item-categories">
+						<div class="item-categories__img-ibg">
+							<img src="@img/1x1.png" data-src="@img/catalog/4.jpg" alt="">
+						</div>
+						<div class="item-categories__title">Sale & Discount</div>
+					</a>
+					<a href="#" class="categories__item item-categories">
+						<div class="item-categories__img-ibg">
+							<img src="@img/1x1.png" data-src="@img/catalog/2.jpg" alt="">
+						</div>
+						<div class="item-categories__title">Sale & Discount</div>
+					</a>
+
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

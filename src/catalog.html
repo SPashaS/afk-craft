@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"AFK-craft - Каталог"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="page__container page__has-sidebar">
+				<aside class="page__sidebar">
+					<ul class="category-list">
+						<li><a href="#">Turtle WoW</a></li>
+						<li>
+							<a href="#">Different stuff</a>
+
+							<ul class="category-list__sub">
+								<li><a href="#">Small stuff</a></li>
+								<li>
+									<a href="#">Big stuff</a>
+									<ul class="category-list__sub">
+										<li><a href="#">Small stuff</a></li>
+										<li><a href="#">Big stuff</a></li>
+										<li><a href="#">Another category</a></li>
+										<li><a href="#">Middle stuff</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Another category</a></li>
+								<li><a href="#">Middle stuff</a></li>
+							</ul>
+
+						</li>
+						<li><a href="#">Sale & Discount</a></li>
+						<li><a href="#">Anime</a></li>
+						<li>
+							<a href="#">Old dad’s panties</a>
+							<ul class="category-list__sub">
+								<li><a href="#">Small stuff</a></li>
+								<li>
+									<a href="#">Big stuff</a>
+									<ul class="category-list__sub">
+										<li><a href="#">Small stuff</a></li>
+										<li><a href="#">Big stuff</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">PC games</a></li>
+						<li><a href="#">French fries large</a></li>
+					</ul>
+
+					<div class="category-tags" data-showmore="items">
+						<ul class="tags" data-showmore-content="5">
+
+							<li>
+								<a class="tag" href="#">games</a>
+							</li>
+							<li>
+								<a class="tag" href="#">t-shirt</a>
+							</li>
+							<li>
+								<a class="tag" href="#">games</a>
+							</li>
+							<li>
+								<a class="tag" href="#">t-shirt</a>
+							</li>
+							<li>
+								<a class="tag" href="#">games</a>
+							</li>
+							<li>
+								<a class="tag" href="#">t-shirt</a>
+							</li>
+							<li>
+								<a class="tag" href="#">games</a>
+							</li>
+							<li>
+								<a class="tag" href="#">t-shirt</a>
+							</li>
+							<li>
+								<a class="tag" href="#">games</a>
+							</li>
+							<li>
+								<a class="tag" href="#">t-shirt</a>
+							</li>
+							<li>
+								<a class="tag" href="#">games</a>
+							</li>
+							<li>
+								<a class="tag" href="#">t-shirt</a>
+							</li>
+							<li>
+								<a class="tag" href="#">games</a>
+							</li>
+							<li>
+								<a class="tag" href="#">t-shirt</a>
+							</li>
+							<li>
+								<a class="tag" href="#">games</a>
+							</li>
+							<li>
+								<a class="tag" href="#">t-shirt</a>
+							</li>
+
+						</ul>
+						<button hidden data-showmore-button type="button" class="category-tags__more"><span>Show
+								more</span><span>Hide</span></button>
+
+					</div>
+
+				</aside>
+
+				<div class="page__body">
+					<div class="page__content page__content--grid">
+
+
+						<div class="card">
+							<a href="#" class="card__img-ibg">
+								<img src="@img/1x1.png" data-src="@img/catalog/1.jpg" alt="">
+							</a>
+							<div class="card__row">
+								<span class="card__price price">330</span>
+								<button class="card__favorite-btn favorite-btn" aria-label="Add to Favorites">
+									<svg class="favorite-btn__icon" width="19" height="19" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+									</svg>
+								</button>
+								<div class="card__basket basket-card _icon-basket" aria-label="choose size">
+									<div class="basket-card__sizes">
+										<span class="size">
+											<input class="size__input" id="1-xs" type="checkbox" name="radio1">
+											<label class="size__label" for="1-xs">xs</label>
+										</span>
+										<span class="size">
+											<input class="size__input" id="1-s" type="checkbox" name="radio1">
+											<label class="size__label" for="1-s">s</label>
+										</span>
+										<span class="size">
+											<input class="size__input" id="1-m" type="checkbox" name="radio1">
+											<label class="size__label" for="1-m">m</label>
+										</span>
+
+									</div>
+								</div>
+							</div>
+							<a href="#" class="card__title">Grandpa’s oversizedt-shirt with arthouse art</a>
+						</div>
+						
+						<div class="card">
+							<a href="#" class="card__img-ibg">
+								<img src="@img/1x1.png" data-src="@img/default.png" alt="">
+							</a>
+							<div class="card__row">
+								<span class="card__price price">330</span>
+								<button class="card__favorite-btn favorite-btn" aria-label="Add to Favorites">
+									<svg class="favorite-btn__icon" width="19" height="19" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+									</svg>
+								</button>
+								<div class="card__basket basket-card _icon-basket" aria-label="choose size">
+									<div class="basket-card__sizes">
+										<span class="size">
+											<input class="size__input" id="2-xs" type="checkbox" name="radio2">
+											<label class="size__label" for="2-xs">xs</label>
+										</span>
+										<span class="size">
+											<input class="size__input" id="2-xl" type="checkbox" name="radio2">
+											<label class="size__label" for="2-xl">xl</label>
+										</span>
+										<span class="size">
+											<input class="size__input" id="2-2xl" type="checkbox" name="radio2">
+											<label class="size__label" for="2-2xl">2xl</label>
+										</span>
+										<span class="size">
+											<input class="size__input" id="2-3xl" type="checkbox" name="radio2">
+											<label class="size__label" for="2-3xl">3xl</label>
+										</span>
+
+									</div>
+								</div>
+							</div>
+							<a href="#" class="card__title">Grandpa’s oversizedt-shirt with arthouse art</a>
+						</div>
+						
+						<div class="card">
+							<a href="#" class="card__img-ibg">
+								<img src="@img/1x1.png" data-src="@img/catalog/3.jpg" alt="">
+							</a>
+							<div class="card__row">
+								<span class="card__price price">330</span>
+								<button class="card__favorite-btn favorite-btn" aria-label="Add to Favorites">
+									<svg class="favorite-btn__icon" width="19" height="19" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+									</svg>
+								</button>
+
+								<div class="card__basket basket-card _icon-basket" aria-label="choose size">
+									<div class="basket-card__sizes">
+										<span class="size">
+											<input class="size__input" id="3-xs" type="checkbox" name="radio3">
+											<label class="size__label" for="3-xs">xs</label>
+										</span>
+										<span class="size">
+											<input class="size__input" id="3-s" type="checkbox" name="radio3">
+											<label class="size__label" for="3-s">s</label>
+										</span>
+										<span class="size">
+											<input class="size__input" id="3-m" type="checkbox" name="radio3">
+											<label class="size__label" for="3-m">m</label>
+										</span>
+										<span class="size">
+											<input class="size__input" id="3-xl" type="checkbox" name="radio3">
+											<label class="size__label" for="3-xl">xl</label>
+										</span>
+										<span class="size">
+											<input class="size__input" id="3-2xl" type="checkbox" name="radio3" disabled>
+											<label class="size__label" for="3-2xl">2xl</label>
+										</span>
+										<span class="size">
+											<input class="size__input" id="3-3xl" type="checkbox" name="radio3">
+											<label class="size__label" for="3-3xl">3xl</label>
+										</span>
+
+									</div>
+								</div>
+							</div>
+							<a href="#" class="card__title">Grandpa’s oversizedt-shirt with arthouse art</a>
+						</div>
+						
+
+
+
+					</div>
+					<div class="page__pagging">
+						@@include('html/_pagging.htm',{})
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

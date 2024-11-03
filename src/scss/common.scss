@@ -1,0 +1,123 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+h1,
+.h1 {
+  font-size: 3.2rem;
+  line-height: 1.19;
+}
+
+h2,
+.h2 {
+  font-size: 1.9rem;
+  line-height: 1.33;
+
+  @media (min-width:$mobile){
+    font-size: 2.4rem;
+  }
+}
+
+
+.price {
+  font-family: var(--ff-second);
+  font-weight: 700;
+  &::after {
+    content: ' €';
+  }
+}
+
+.btn {
+  padding: 16px 55px;
+  font-size: 1.8rem;
+  line-height: 1.33;
+  border: 1px solid rgba(27, 21, 33, 0.5);
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: var(--green);
+      color: var(--green);
+    }
+  }
+
+  &:active {
+    border-color: var(--green);
+    color: var(--green);
+  }
+}
+
+.delete {
+  @media (hover: hover) {
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+//====================================================================================================
+
+// .pop-message {
+//   position: fixed;
+//   left: 50%;
+//   top: 10%;
+//   transform: translate(-50%, -50px);
+//   max-width: 300px;
+//   width: 100%;
+//   padding: 10px 25px;
+//   background: var(--green);
+//   color: #fff;
+//   font-size: 1.8rem;
+//   text-transform: uppercase;
+//   opacity: 0;
+//   transition: all 0.3s ease 0s;
+
+//   .pop-message-active & {
+//     transform: translate(-50%, 0);
+//     opacity: 1;
+//   }
+// }
+
+.pop-message {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50px);
+  max-width: 300px;
+  width: 100%;
+  padding: 10px 25px;
+  background: var(--green);
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  text-align: center;
+
+  @media (min-width:$tablet){
+    max-width: 500px;
+  }
+}
+
+.pop-message--remove {
+  background: var(--red); /* Цвет для сообщения об удалении */
+}
+
+.pop-message-active.pop-message {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+
+
+
+//====================================================================================================
+
+
+//====================================================================================================
+
+
+//====================================================================================================
+
+
+//====================================================================================================

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"AFK-craft - Страница товара"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="page__container">
+				<div class="page__product product">
+					<div class="product__carousels">
+						<div class="product__thumbs-carousel thumbs-carousel">
+							<div class="thumbs-carousel__slider">
+								<div class="thumbs-carousel__swiper">
+									<div class="thumbs-carousel__slide thumbs-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/1.jpg" alt="">
+									</div>
+									<div class="thumbs-carousel__slide thumbs-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/2.jpg" alt="">
+									</div>
+									<div class="thumbs-carousel__slide thumbs-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/3.jpg" alt="">
+									</div>
+									<div class="thumbs-carousel__slide thumbs-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/4.jpg" alt="">
+									</div>
+									<div class="thumbs-carousel__slide thumbs-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/2.jpg" alt="">
+									</div>
+									<div class="thumbs-carousel__slide thumbs-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/3.jpg" alt="">
+									</div>
+									<div class="thumbs-carousel__slide thumbs-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/4.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="thumbs-carousel__navigation">
+								<button class="thumbs-carousel__btn thumbs-carousel__btn_prev _icon-arr" type="button" aria-label="Prev slide"></button>
+								<button class="thumbs-carousel__btn thumbs-carousel__btn_next _icon-arr" type="button" aria-label="Next slide"></button>
+							</div>
+
+						</div>
+						<div class="product__main-carousel main-carousel">
+							<div class="main-carousel__slider">
+								<div class="main-carousel__swiper">
+									<div class="main-carousel__slide main-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/1.jpg" alt="">
+									</div>
+									<div class="main-carousel__slide main-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/2.jpg" alt="">
+									</div>
+									<div class="main-carousel__slide main-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/3.jpg" alt="">
+									</div>
+									<div class="main-carousel__slide main-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/4.jpg" alt="">
+									</div>
+									<div class="main-carousel__slide main-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/2.jpg" alt="">
+									</div>
+									<div class="main-carousel__slide main-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/3.jpg" alt="">
+									</div>
+									<div class="main-carousel__slide main-carousel__slide-ibg">
+										<img src="@img/1x1.png" data-src="@img/catalog/4.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="product__body">
+						<h1 class="product__title">Grandpa’s oversized t-shirt with arthouse art</h1>
+						<div class="product__price price">330</div>
+						<div class="product__sizes">
+							<span class="size">
+								<input class="size__input" id="xs" autocomplete="off" type="checkbox" name="radio">
+								<label class="size__label" for="xs">xs</label>
+							</span>
+							<span class="size">
+								<input class="size__input" id="s" autocomplete="off" type="checkbox" name="radio">
+								<label class="size__label" for="s">s</label>
+							</span>
+							<span class="size">
+								<input class="size__input" id="m" autocomplete="off" type="checkbox" name="radio">
+								<label class="size__label" for="m">m</label>
+							</span>
+							<span class="size">
+								<input class="size__input" id="xl" autocomplete="off" type="checkbox" name="radio">
+								<label class="size__label" for="xl">xl</label>
+							</span>
+							<span class="size">
+								<input class="size__input" id="2xl" autocomplete="off" type="checkbox" name="radio" disabled>
+								<label class="size__label" for="2xl">2xl</label>
+							</span>
+							<span class="size">
+								<input class="size__input" id="3xl" autocomplete="off" type="checkbox" name="radio">
+								<label class="size__label" for="3xl">3xl</label>
+							</span>
+
+						</div>
+						<div class="product__colours">
+							<a href="#" class="product__colours-item" style="background: #000;">Черный</a>
+							<a href="#" class="product__colours-item" style="background: #fff;">Белый</a>
+							<a href="#" class="product__colours-item" style="background: #ff0000;">Красный</a>
+						</div>
+						<p class="product__composition">Composition: cotton 100%</p>
+						<div class="product__btns">
+							<button class="product__btn btn" type="button">Add basket</button>
+							<!-- <button class="product__favourites _icon-favourites" type="button" aria-label="Добавить в избранное"></button> -->
+
+
+							<button class="product__favourites favorite-btn" aria-label="Add to Favorites">
+								<svg class="favorite-btn__icon" width="21" height="21" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+								</svg>
+							</button>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="page__carousel carousel">
+					<h2 class="carousel__title">
+						Similar products
+					</h2>
+					<div class="carousel__body">
+						<div class="carousel__slider">
+							<div class="carousel__swiper">
+								<div class="carousel__slide">
+									<a href="#" class="carousel-card">
+										<div class="carousel-card__img-ibg">
+											<img src="@img/1x1.png" data-src="@img/catalog/1.jpg" alt="">
+											<img src="@img/1x1.png" data-src="@img/catalog/1.jpg" alt="">
+										</div>
+										<h3 class="carousel-card__title">
+											Grandpa’s oversized t-shirt with art
+										</h3>
+									</a>
+								</div>
+								<div class="carousel__slide">
+									<a href="#" class="carousel-card">
+										<div class="carousel-card__img-ibg">
+											<img src="@img/1x1.png" data-src="@img/catalog/2.jpg" alt="">
+										</div>
+										<h3 class="carousel-card__title">
+											Grandpa’s oversized t-shirt with art
+										</h3>
+									</a>
+								</div>
+								<div class="carousel__slide">
+									<a href="#" class="carousel-card">
+										<div class="carousel-card__img-ibg">
+											<img src="@img/1x1.png" data-src="@img/catalog/3.jpg" alt="">
+										</div>
+										<h3 class="carousel-card__title">
+											Grandpa’s oversized t-shirt with art
+										</h3>
+									</a>
+								</div>
+								<div class="carousel__slide">
+									<a href="#" class="carousel-card">
+										<div class="carousel-card__img-ibg">
+											<img src="@img/1x1.png" data-src="@img/catalog/4.jpg" alt="">
+										</div>
+										<h3 class="carousel-card__title">
+											Grandpa’s oversized t-shirt with art
+										</h3>
+									</a>
+								</div>
+								<div class="carousel__slide">
+									<a href="#" class="carousel-card">
+										<div class="carousel-card__img-ibg">
+											<img src="@img/1x1.png" data-src="@img/catalog/3.jpg" alt="">
+										</div>
+										<h3 class="carousel-card__title">
+											Grandpa’s oversized t-shirt with art
+										</h3>
+									</a>
+								</div>
+								<div class="carousel__slide">
+									<a href="#" class="carousel-card">
+										<div class="carousel-card__img-ibg">
+											<img src="@img/1x1.png" data-src="@img/catalog/2.jpg" alt="">
+										</div>
+										<h3 class="carousel-card__title">
+											Grandpa’s oversized t-shirt with art
+										</h3>
+									</a>
+								</div>
+								<div class="carousel__slide">
+									<a href="#" class="carousel-card">
+										<div class="carousel-card__img-ibg">
+											<img src="@img/1x1.png" data-src="@img/catalog/1.jpg" alt="">
+										</div>
+										<h3 class="carousel-card__title">
+											Grandpa’s oversized t-shirt with art
+										</h3>
+									</a>
+								</div>
+								<div class="carousel__slide">
+									<a href="#" class="carousel-card">
+										<div class="carousel-card__img-ibg">
+											<img src="@img/1x1.png" data-src="@img/catalog/2.jpg" alt="">
+										</div>
+										<h3 class="carousel-card__title">
+											Grandpa’s oversized t-shirt with art
+										</h3>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="carousel__nav">
+							<button class="carousel__btn carousel__btn_prev _icon-arr" type="button" aria-label="Prev slide"></button>
+							<button class="carousel__btn carousel__btn_next _icon-arr" type="button" aria-label="Next slide"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
