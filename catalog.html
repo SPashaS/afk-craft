@@ -58,120 +58,145 @@
 
 				<div class="header__right">
 					<div class="header__user user">
-						<a href="#" class="user__login _icon-user">CharlesDickEns42</a>
+						<a href="#" class="user__login _icon-user"><span>CharlesDickEns42</span></a>
 						<a href="#" class="user__authorization" style="display: none;">Войти</a>
 					</div>
-					<a href="#" class="header__basket _icon-basket"></a>
+					<a href="#" class="header__basket basket _icon-basket">
+						<span class="basket__quantity">10</span>
+					</a>
 					<a href="#" class="header__favourites _icon-favourites"></a>
-
+					<a href="#" class="header__log-out">Log out</a>
 				</div>
 			</div>
 		</header>
 		<main class="page">
 			<div class="page__container page__has-sidebar">
 				<aside class="page__sidebar">
-					<ul class="category-list">
-						<li><a href="#">Turtle WoW</a></li>
-						<li>
-							<a href="#">Different stuff</a>
 
-							<ul class="category-list__sub">
-								<li><a href="#">Small stuff</a></li>
+					<div class="menu">
+						<div class="menu__header">
+							<h2 class="menu__title">Categories</h2>
+							<button class="menu__toggle-btn">
+								<span class="toggle-icon">
+									<span class="line line1"></span>
+									<span class="line line2"></span>
+									<span class="line line3"></span>
+								</span>
+							</button>
+						</div>
+
+						<div class="category-list-container">
+							<ul class="category-list">
+								<li><a href="#">Turtle WoW</a></li>
 								<li>
-									<a href="#">Big stuff</a>
+									<a href="#">Different stuff</a>
+
 									<ul class="category-list__sub">
 										<li><a href="#">Small stuff</a></li>
-										<li><a href="#">Big stuff</a></li>
+										<li>
+											<a href="#">Big stuff</a>
+											<ul class="category-list__sub">
+												<li><a href="#">Small stuff</a></li>
+												<li><a href="#">Big stuff</a></li>
+												<li><a href="#">Another category</a></li>
+												<li><a href="#">Middle stuff</a></li>
+											</ul>
+										</li>
 										<li><a href="#">Another category</a></li>
 										<li><a href="#">Middle stuff</a></li>
 									</ul>
-								</li>
-								<li><a href="#">Another category</a></li>
-								<li><a href="#">Middle stuff</a></li>
-							</ul>
 
-						</li>
-						<li><a href="#">Sale & Discount</a></li>
-						<li><a href="#">Anime</a></li>
-						<li>
-							<a href="#">Old dad’s panties</a>
-							<ul class="category-list__sub">
-								<li><a href="#">Small stuff</a></li>
+								</li>
+								<li><a href="#">Sale & Discount</a></li>
+								<li><a href="#">Anime</a></li>
 								<li>
-									<a href="#">Big stuff</a>
+									<a href="#">Old dad’s panties</a>
 									<ul class="category-list__sub">
 										<li><a href="#">Small stuff</a></li>
-										<li><a href="#">Big stuff</a></li>
+										<li>
+											<a href="#">Big stuff</a>
+											<ul class="category-list__sub">
+												<li><a href="#">Small stuff</a></li>
+												<li><a href="#">Big stuff</a></li>
+											</ul>
+										</li>
 									</ul>
 								</li>
+								<li><a href="#">PC games</a></li>
+								<li><a href="#">French fries large</a></li>
 							</ul>
-						</li>
-						<li><a href="#">PC games</a></li>
-						<li><a href="#">French fries large</a></li>
-					</ul>
-
-					<div class="category-tags" data-showmore="items">
-						<ul class="tags" data-showmore-content="5">
-
-							<li>
-								<a class="tag" href="#">games</a>
-							</li>
-							<li>
-								<a class="tag" href="#">t-shirt</a>
-							</li>
-							<li>
-								<a class="tag" href="#">games</a>
-							</li>
-							<li>
-								<a class="tag" href="#">t-shirt</a>
-							</li>
-							<li>
-								<a class="tag" href="#">games</a>
-							</li>
-							<li>
-								<a class="tag" href="#">t-shirt</a>
-							</li>
-							<li>
-								<a class="tag" href="#">games</a>
-							</li>
-							<li>
-								<a class="tag" href="#">t-shirt</a>
-							</li>
-							<li>
-								<a class="tag" href="#">games</a>
-							</li>
-							<li>
-								<a class="tag" href="#">t-shirt</a>
-							</li>
-							<li>
-								<a class="tag" href="#">games</a>
-							</li>
-							<li>
-								<a class="tag" href="#">t-shirt</a>
-							</li>
-							<li>
-								<a class="tag" href="#">games</a>
-							</li>
-							<li>
-								<a class="tag" href="#">t-shirt</a>
-							</li>
-							<li>
-								<a class="tag" href="#">games</a>
-							</li>
-							<li>
-								<a class="tag" href="#">t-shirt</a>
-							</li>
-
-						</ul>
-						<button hidden data-showmore-button type="button" class="category-tags__more"><span>Show
-								more</span><span>Hide</span></button>
+						</div>
 
 					</div>
+
+					<div>
+						<h2>Tags:</h2>
+						<div class="category-tags" data-showmore="items">
+							<ul class="tags" data-showmore-content="5">
+
+								<li>
+									<a class="tag" href="#">games</a>
+								</li>
+								<li>
+									<a class="tag" href="#">t-shirt</a>
+								</li>
+								<li>
+									<a class="tag" href="#">games</a>
+								</li>
+								<li>
+									<a class="tag" href="#">t-shirt</a>
+								</li>
+								<li>
+									<a class="tag" href="#">games</a>
+								</li>
+								<li>
+									<a class="tag" href="#">t-shirt</a>
+								</li>
+								<li>
+									<a class="tag" href="#">games</a>
+								</li>
+								<li>
+									<a class="tag" href="#">t-shirt</a>
+								</li>
+								<li>
+									<a class="tag" href="#">games</a>
+								</li>
+								<li>
+									<a class="tag" href="#">t-shirt</a>
+								</li>
+								<li>
+									<a class="tag" href="#">games</a>
+								</li>
+								<li>
+									<a class="tag" href="#">t-shirt</a>
+								</li>
+								<li>
+									<a class="tag" href="#">games</a>
+								</li>
+								<li>
+									<a class="tag" href="#">t-shirt</a>
+								</li>
+								<li>
+									<a class="tag" href="#">games</a>
+								</li>
+								<li>
+									<a class="tag" href="#">t-shirt</a>
+								</li>
+
+							</ul>
+							<button hidden data-showmore-button type="button" class="category-tags__more"><span>Show
+									more</span><span>Hide</span></button>
+
+						</div>
+					</div>
+
+
 
 				</aside>
 
 				<div class="page__body">
 					<div class="page__content page__content--grid">
+
 
 
 						<div class="card">
@@ -185,23 +210,47 @@
 										<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
 									</svg>
 								</button>
-								<div class="card__basket basket-card _icon-basket" aria-label="choose size">
-									<div class="basket-card__sizes">
-										<span class="size">
-											<input class="size__input" id="1-xs" type="checkbox" name="radio1">
-											<label class="size__label" for="1-xs">xs</label>
-										</span>
-										<span class="size">
-											<input class="size__input" id="1-s" type="checkbox" name="radio1">
-											<label class="size__label" for="1-s">s</label>
-										</span>
-										<span class="size">
-											<input class="size__input" id="1-m" type="checkbox" name="radio1">
-											<label class="size__label" for="1-m">m</label>
-										</span>
+								<div class="card__basket basket-card">
+									<button class="basket-card__icon _icon-basket" type="button" aria-label="choose size and color"></button>
+									<div class="basket-card__wrapper">
+										<div class="basket-card__sizes">
+											<span class="size">
+												<input class="size__input" id="1-xs" type="radio" name="size">
+												<label class="size__label" for="1-xs">XS</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="1-s" type="radio" name="size">
+												<label class="size__label" for="1-s">S</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="1-m" type="radio" name="size">
+												<label class="size__label" for="1-m">M</label>
+											</span>
+										</div>
 
+										<div class="basket-card__colors">
+											<span class="color">
+												<input class="color__input" id="color-red" type="radio" name="color">
+												<label class="color__label" for="color-red" style="background-color: red;">red</label>
+											</span>
+											<span class="color">
+												<input class="color__input" id="color-blue" type="radio" name="color">
+												<label class="color__label" for="color-blue" style="background-color: blue;">blue</label>
+											</span>
+											<span class="color">
+												<input class="color__input" id="color-green" type="radio" name="color">
+												<label class="color__label" for="color-green" style="background-color: green;">green</label>
+											</span>
+										</div>
+
+										<button type="submit" class="basket-card__btn btn" onclick="showPopupMessage('pop-add')">Add basket</button>
 									</div>
+									<div class="basket-card__overlay"></div>
 								</div>
+
+
+
+
 							</div>
 							<a href="#" class="card__title">Grandpa’s oversizedt-shirt with arthouse art</a>
 						</div>
@@ -217,27 +266,47 @@
 										<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
 									</svg>
 								</button>
-								<div class="card__basket basket-card _icon-basket" aria-label="choose size">
-									<div class="basket-card__sizes">
-										<span class="size">
-											<input class="size__input" id="2-xs" type="checkbox" name="radio2">
-											<label class="size__label" for="2-xs">xs</label>
-										</span>
-										<span class="size">
-											<input class="size__input" id="2-xl" type="checkbox" name="radio2">
-											<label class="size__label" for="2-xl">xl</label>
-										</span>
-										<span class="size">
-											<input class="size__input" id="2-2xl" type="checkbox" name="radio2">
-											<label class="size__label" for="2-2xl">2xl</label>
-										</span>
-										<span class="size">
-											<input class="size__input" id="2-3xl" type="checkbox" name="radio2">
-											<label class="size__label" for="2-3xl">3xl</label>
-										</span>
+								<div class="card__basket basket-card">
+									<button class="basket-card__icon _icon-basket" type="button" aria-label="choose size and color"></button>
+									<div class="basket-card__wrapper">
+										<div class="basket-card__sizes">
+											<span class="size">
+												<input class="size__input" id="2-xs" type="radio" name="size">
+												<label class="size__label" for="2-xs">XS</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="2-s" type="radio" name="size">
+												<label class="size__label" for="2-s">S</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="2-m" type="radio" name="size">
+												<label class="size__label" for="2-m">M</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="2-l" type="radio" name="size">
+												<label class="size__label" for="2-l">L</label>
+											</span>
+										</div>
 
+										<div class="basket-card__colors">
+											<span class="color">
+												<input class="color__input" id="2-color-red" type="radio" name="color">
+												<label class="color__label" for="2-color-red" style="background-color: red;">red</label>
+											</span>
+											<span class="color">
+												<input class="color__input" id="2-color-blue" type="radio" name="color">
+												<label class="color__label" for="2-color-blue" style="background-color: blue;">blue</label>
+											</span>
+										</div>
+
+										<button type="submit" class="basket-card__btn btn" onclick="showPopupMessage('pop-add')">Add basket</button>
 									</div>
+									<div class="basket-card__overlay"></div>
 								</div>
+
+
+
+
 							</div>
 							<a href="#" class="card__title">Grandpa’s oversizedt-shirt with arthouse art</a>
 						</div>
@@ -253,41 +322,218 @@
 										<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
 									</svg>
 								</button>
+								<div class="card__basket basket-card">
+									<button class="basket-card__icon _icon-basket" type="button" aria-label="choose size and color"></button>
+									<div class="basket-card__wrapper">
+										<div class="basket-card__sizes">
+											<span class="size">
+												<input class="size__input" id="3-xs" type="radio" name="size">
+												<label class="size__label" for="3-xs">XS</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="3-s" type="radio" name="size">
+												<label class="size__label" for="3-s">S</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="3-m" type="radio" name="size">
+												<label class="size__label" for="3-m">M</label>
+											</span>
+										</div>
 
-								<div class="card__basket basket-card _icon-basket" aria-label="choose size">
-									<div class="basket-card__sizes">
-										<span class="size">
-											<input class="size__input" id="3-xs" type="checkbox" name="radio3">
-											<label class="size__label" for="3-xs">xs</label>
-										</span>
-										<span class="size">
-											<input class="size__input" id="3-s" type="checkbox" name="radio3">
-											<label class="size__label" for="3-s">s</label>
-										</span>
-										<span class="size">
-											<input class="size__input" id="3-m" type="checkbox" name="radio3">
-											<label class="size__label" for="3-m">m</label>
-										</span>
-										<span class="size">
-											<input class="size__input" id="3-xl" type="checkbox" name="radio3">
-											<label class="size__label" for="3-xl">xl</label>
-										</span>
-										<span class="size">
-											<input class="size__input" id="3-2xl" type="checkbox" name="radio3" disabled>
-											<label class="size__label" for="3-2xl">2xl</label>
-										</span>
-										<span class="size">
-											<input class="size__input" id="3-3xl" type="checkbox" name="radio3">
-											<label class="size__label" for="3-3xl">3xl</label>
-										</span>
+										<div class="basket-card__colors">
+											<span class="color">
+												<input class="color__input" id="3-color-red" type="radio" name="color">
+												<label class="color__label" for="3-color-red" style="background-color: red;">red</label>
+											</span>
+											<span class="color">
+												<input class="color__input" id="3-color-blue" type="radio" name="color">
+												<label class="color__label" for="3-color-blue" style="background-color: blue;">blue</label>
+											</span>
+											<span class="color">
+												<input class="color__input" id="3-color-green" type="radio" name="color">
+												<label class="color__label" for="3-color-green" style="background-color: green;">green</label>
+											</span>
+										</div>
 
+										<button type="submit" class="basket-card__btn btn" onclick="showPopupMessage('pop-add')">Add basket</button>
 									</div>
+									<div class="basket-card__overlay"></div>
 								</div>
+
+
+
+
 							</div>
 							<a href="#" class="card__title">Grandpa’s oversizedt-shirt with arthouse art</a>
 						</div>
 
+						<div class="card">
+							<a href="#" class="card__img-ibg">
+								<img src="img/1x1.png" data-src="img/default.png" alt="">
+							</a>
+							<div class="card__row">
+								<span class="card__price price">330</span>
+								<button class="card__favorite-btn favorite-btn" aria-label="Add to Favorites">
+									<svg class="favorite-btn__icon" width="19" height="19" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+									</svg>
+								</button>
+								<div class="card__basket basket-card">
+									<button class="basket-card__icon _icon-basket" type="button" aria-label="choose size and color"></button>
+									<div class="basket-card__wrapper">
+										<div class="basket-card__sizes">
+											<span class="size">
+												<input class="size__input" id="4-xs" type="radio" name="size">
+												<label class="size__label" for="4-xs">XS</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="4-s" type="radio" name="size">
+												<label class="size__label" for="4-s">S</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="4-m" type="radio" name="size">
+												<label class="size__label" for="4-m">M</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="4-l" type="radio" name="size">
+												<label class="size__label" for="4-l">L</label>
+											</span>
+										</div>
 
+										<div class="basket-card__colors">
+											<span class="color">
+												<input class="color__input" id="4-color-red" type="radio" name="color">
+												<label class="color__label" for="4-color-red" style="background-color: red;">red</label>
+											</span>
+											<span class="color">
+												<input class="color__input" id="4-color-blue" type="radio" name="color">
+												<label class="color__label" for="4-color-blue" style="background-color: blue;">blue</label>
+											</span>
+										</div>
+
+										<button type="submit" class="basket-card__btn btn" onclick="showPopupMessage('pop-add')">Add basket</button>
+									</div>
+									<div class="basket-card__overlay"></div>
+								</div>
+
+
+
+
+							</div>
+							<a href="#" class="card__title">Grandpa’s oversizedt-shirt with arthouse art</a>
+						</div>
+
+						<div class="card">
+							<a href="#" class="card__img-ibg">
+								<img src="img/1x1.png" data-src="img/catalog/4.jpg" alt="">
+							</a>
+							<div class="card__row">
+								<span class="card__price price">330</span>
+								<button class="card__favorite-btn favorite-btn" aria-label="Add to Favorites">
+									<svg class="favorite-btn__icon" width="19" height="19" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+									</svg>
+								</button>
+								<div class="card__basket basket-card">
+									<button class="basket-card__icon _icon-basket" type="button" aria-label="choose size and color"></button>
+									<div class="basket-card__wrapper">
+										<div class="basket-card__sizes">
+											<span class="size">
+												<input class="size__input" id="5-xs" type="radio" name="size">
+												<label class="size__label" for="5-xs">XS</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="5-s" type="radio" name="size">
+												<label class="size__label" for="5-s">S</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="5-m" type="radio" name="size">
+												<label class="size__label" for="5-m">M</label>
+											</span>
+										</div>
+
+										<div class="basket-card__colors">
+											<span class="color">
+												<input class="color__input" id="5color-red" type="radio" name="color">
+												<label class="color__label" for="5color-red" style="background-color: red;">red</label>
+											</span>
+											<span class="color">
+												<input class="color__input" id="5color-blue" type="radio" name="color">
+												<label class="color__label" for="5color-blue" style="background-color: blue;">blue</label>
+											</span>
+											<span class="color">
+												<input class="color__input" id="5color-green" type="radio" name="color">
+												<label class="color__label" for="5color-green" style="background-color: green;">green</label>
+											</span>
+										</div>
+
+										<button type="submit" class="basket-card__btn btn" onclick="showPopupMessage('pop-add')">Add basket</button>
+									</div>
+									<div class="basket-card__overlay"></div>
+								</div>
+
+
+
+
+							</div>
+							<a href="#" class="card__title">Grandpa’s oversizedt-shirt with arthouse art</a>
+						</div>
+
+						<div class="card">
+							<a href="#" class="card__img-ibg">
+								<img src="img/1x1.png" data-src="img/catalog/1.jpg" alt="">
+							</a>
+							<div class="card__row">
+								<span class="card__price price">330</span>
+								<button class="card__favorite-btn favorite-btn" aria-label="Add to Favorites">
+									<svg class="favorite-btn__icon" width="19" height="19" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+									</svg>
+								</button>
+								<div class="card__basket basket-card">
+									<button class="basket-card__icon _icon-basket" type="button" aria-label="choose size and color"></button>
+									<div class="basket-card__wrapper">
+										<div class="basket-card__sizes">
+											<span class="size">
+												<input class="size__input" id="6-xs" type="radio" name="size">
+												<label class="size__label" for="6-xs">XS</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="6-s" type="radio" name="size">
+												<label class="size__label" for="6-s">S</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="6-m" type="radio" name="size">
+												<label class="size__label" for="6-m">M</label>
+											</span>
+											<span class="size">
+												<input class="size__input" id="6-l" type="radio" name="size">
+												<label class="size__label" for="6-l">L</label>
+											</span>
+										</div>
+
+										<div class="basket-card__colors">
+											<span class="color">
+												<input class="color__input" id="6-color-red" type="radio" name="color">
+												<label class="color__label" for="6-color-red" style="background-color: red;">red</label>
+											</span>
+											<span class="color">
+												<input class="color__input" id="6-color-blue" type="radio" name="color">
+												<label class="color__label" for="6-color-blue" style="background-color: blue;">blue</label>
+											</span>
+										</div>
+
+										<button type="submit" class="basket-card__btn btn" onclick="showPopupMessage('pop-add')">Add basket</button>
+									</div>
+									<div class="basket-card__overlay"></div>
+								</div>
+
+
+
+
+							</div>
+							<a href="#" class="card__title">Grandpa’s oversizedt-shirt with arthouse art</a>
+						</div>
 
 
 					</div>
@@ -356,7 +602,7 @@
 				</nav>
 
 				<div class="footer__right">
-					<a href="#" class="footer__logo logo"><img src="img/logo.svg" alt="Logo"></a>
+					<a href="#" class="footer__logo logo"><img src="img/logo-footer.svg" alt="Logo"></a>
 					<ul class="footer__socials socials">
 						<li><a href="#" class="_icon-facebook"></a></li>
 						<li><a href="#" class="_icon-youtube"></a></li>
@@ -368,76 +614,116 @@
 		</footer>
 
 	</div>
-	<!-- <div id="application" aria-hidden="true" class="popup">
-  <div class="popup__wrapper">
-    <div class="popup__content">
-      <button data-close type="button" class="popup__close _icon-close"></button>
-      <div class="popup__text">
-        <div class="application">
-          <div class="application__img-ibg"></div>
+	<div class="pop-message" id="pop-add">Product added to cart!</div>
+	<div class="pop-message" id="pop-remove">Product removed from cart!</div>
 
-          <div class="application__body">
-            <div class="application__header">
-              <div class="application__title">ОСТАВИТЬ ЗАЯВКУ</div>
-              <p class="application__text">
-                Оставьте свои данные, мы свяжемся с вами и предложим лучший вариант
-              </p>
-            </div>
-            <div class="application__form form">
-              <form class="form" action="#">
-                <div class="form__row">
-                  <div class="form__input">
-                    <input type="text" data-error="Ошибка" placeholder="Ваше имя">
-                  </div>
-                </div>
-                <div class="form__row">
-                  <div class="form__input">
-                    <input type="text" data-error="Ошибка" placeholder="Телефон">
-                  </div>
-                </div>
-                <div class="form__row">
-                  <div class="form__textarea">
-                    <textarea type="text" placeholder="Пожелания по туру"></textarea>
-                  </div>
-                </div>
-                <div class="form__row">
-                  <div class="form__select">
+	<script src="js/app.min.js?_v=20241105135431"></script>
 
-                    <div class="form__select-item">
-                      <input id="type-contacts-call-me" type="radio" name="type-contacts" value="CallMe" checked>
-                      <label for="type-contacts-call-me">Позвонить мне</label>
-                    </div>
+	<script>
+		// избранное
+		document.querySelectorAll('.favorite-btn').forEach(button => {
+			button.addEventListener('click', function() {
+				button.classList.toggle('favorite-btn--active');
+			});
+		});
 
-                    <div class="form__select-item">
-                      <input id="type-contacts-whatsapp" type="radio" name="type-contacts" value="WhatsApp">
-                      <label for="type-contacts-whatsapp">Написать мне в WhatsApp</label>
-                    </div>
 
-                    <div class="form__select-item">
-                      <input id="type-contacts-telegram" type="radio" name="type-contacts" value="Telegram">
-                      <label for="type-contacts-telegram">Написать мне в Telegram</label>
-                    </div>
 
-                  </div>
-                </div>
-                <div class="form__submit">
-                  <button class="btn" type="submit">Отправить</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
+		//поиск
+		document.addEventListener("DOMContentLoaded", function() {
+			const searchInput = document.querySelector(".search__input");
+			const searchBlock = document.querySelector(".search__block");
 
-	<div class="pop-message pop-message--add">Product added to cart!</div>
-	<div class="pop-message pop-message--remove">Product removed from cart!</div>
-	<div class="pop-message pop-message--add">Product added to cart!</div>
-	<div class="pop-message pop-message--remove">Product removed from cart!</div>
+			searchInput.addEventListener("input", function() {
+				if (searchInput.value.length >= 2) {
+					searchBlock.classList.add("search__block--active");
+					searchBlock.style.display = "block";
+				} else {
+					searchBlock.classList.remove("search__block--active");
+					searchBlock.style.display = "none";
+				}
+			});
+			document.addEventListener("click", function(event) {
+				if (!searchInput.contains(event.target) && !searchBlock.contains(event.target)) {
+					searchBlock.classList.remove("search__block--active");
+					searchBlock.style.display = "none";
+				}
+			});
 
-	<script src="js/app.min.js?_v=20241103041653"></script>
+			searchInput.addEventListener("focus", function() {
+				if (searchInput.value.length >= 2) {
+					searchBlock.classList.add("search__block--active");
+					searchBlock.style.display = "block";
+				}
+			});
+		});
+
+
+		//попап на карточке товара
+
+		document.addEventListener("DOMContentLoaded", function() {
+			const basketCards = document.querySelectorAll(".card");
+
+			basketCards.forEach((basketCard) => {
+				const basketIcon = basketCard.querySelector(".basket-card__icon");
+				const overlay = basketCard.querySelector(".basket-card__overlay");
+
+				function toggleBasketCardActive() {
+					basketCard.classList.toggle("basket-card--active");
+					overlay.style.display = basketCard.classList.contains("basket-card--active") ? "block" : "none";
+				}
+
+				basketIcon.addEventListener("click", function(event) {
+					event.stopPropagation();
+					toggleBasketCardActive();
+				});
+
+				overlay.addEventListener("click", function() {
+					basketCard.classList.remove("basket-card--active");
+					overlay.style.display = "none";
+				});
+			});
+		});
+
+
+
+
+
+
+		// категории
+
+		document.addEventListener("DOMContentLoaded", function() {
+			// const categoryListContainer = document.querySelector(".category-list-container");
+			const menu = document.querySelector(".menu");
+			const toggleBtn = document.querySelector(".menu__toggle-btn");
+
+			toggleBtn.addEventListener("click", function() {
+				toggleBtn.classList.toggle("active");
+				menu.classList.toggle("menu--open");
+			});
+		});
+
+
+		// всплывашки
+		function showPopupMessage(messageId) {
+			const message = document.getElementById(messageId);
+
+			if (message) {
+				// Убираем класс активности с любых сообщений, если нужно
+				document.querySelectorAll('.pop-message').forEach((msg) => {
+					msg.classList.remove('pop-message--active');
+				});
+
+				// Добавляем класс активности к нужному сообщению
+				message.classList.add('pop-message--active');
+
+				// Убираем сообщение через 2 секунды
+				setTimeout(() => {
+					message.classList.remove('pop-message--active');
+				}, 2000);
+			}
+		}
+	</script>
 </body>
 
 </html>

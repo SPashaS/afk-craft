@@ -58,17 +58,78 @@
 
 				<div class="header__right">
 					<div class="header__user user">
-						<a href="#" class="user__login _icon-user">CharlesDickEns42</a>
+						<a href="#" class="user__login _icon-user"><span>CharlesDickEns42</span></a>
 						<a href="#" class="user__authorization" style="display: none;">Войти</a>
 					</div>
-					<a href="#" class="header__basket _icon-basket"></a>
+					<a href="#" class="header__basket basket _icon-basket">
+						<span class="basket__quantity">10</span>
+					</a>
 					<a href="#" class="header__favourites _icon-favourites"></a>
-
+					<a href="#" class="header__log-out">Log out</a>
 				</div>
 			</div>
 		</header>
 		<main class="page">
 			<div class="page__container page__basket">
+				<div class="menu menu--sidebar">
+
+					<div class="menu__header">
+						<button class="menu__toggle-btn">
+							<span class="toggle-icon">
+								<span class="line line1"></span>
+								<span class="line line2"></span>
+								<span class="line line3"></span>
+							</span>
+						</button>
+						<h2 class="menu__title">Categories</h2>
+					</div>
+
+
+					<div class="category-list-container">
+						<ul class="category-list">
+							<li><a href="#">Turtle WoW</a></li>
+							<li>
+								<a href="#">Different stuff</a>
+
+								<ul class="category-list__sub">
+									<li><a href="#">Small stuff</a></li>
+									<li>
+										<a href="#">Big stuff</a>
+										<ul class="category-list__sub">
+											<li><a href="#">Small stuff</a></li>
+											<li><a href="#">Big stuff</a></li>
+											<li><a href="#">Another category</a></li>
+											<li><a href="#">Middle stuff</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Another category</a></li>
+									<li><a href="#">Middle stuff</a></li>
+								</ul>
+
+							</li>
+							<li><a href="#">Sale & Discount</a></li>
+							<li><a href="#">Anime</a></li>
+							<li>
+								<a href="#">Old dad’s panties</a>
+								<ul class="category-list__sub">
+									<li><a href="#">Small stuff</a></li>
+									<li>
+										<a href="#">Big stuff</a>
+										<ul class="category-list__sub">
+											<li><a href="#">Small stuff</a></li>
+											<li><a href="#">Big stuff</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">PC games</a></li>
+							<li><a href="#">French fries large</a></li>
+						</ul>
+					</div>
+
+
+
+				</div>
 				<div class="page__basket-body body-basket">
 					<div class="body-basket__header">
 						<div class="body-basket__check-all">
@@ -94,10 +155,11 @@
 							<div class="item-basket__body">
 								<div class="item-basket__header">
 									<h2 class="item-basket__title">Grandpa’s oversized t-shirt with arthouse art</h2>
-									<span class="item-basket__size">3xl</span>
+									<span class="item-basket__size">3xl</span>,
+									<span class="item-basket__color">green</span>
 								</div>
 								<div class="item-basket__quantity">
-									<div class="quantity" data-quantity-max="5">
+									<div class="quantity">
 										<button type="button" class="quantity__button quantity__button_minus" disabled>-</button>
 										<div class="quantity__input">
 											<input autocomplete="off" type="text" name="form[]" value="1">
@@ -112,11 +174,10 @@
 											<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
 										</svg>
 									</button>
-									<button class="item-basket__delete delete _icon-del" type="submit" aria-label="Delete"></button>
+									<button class="item-basket__delete delete _icon-del" type="submit" aria-label="Delete" onclick="showPopupMessage('pop-remove')"></button>
 								</div>
 							</div>
 						</div>
-
 						<div class="body-basket__item item-basket">
 							<div class="item-basket__check">
 								<div class="checkbox">
@@ -130,10 +191,11 @@
 							<div class="item-basket__body">
 								<div class="item-basket__header">
 									<h2 class="item-basket__title">Grandpa’s oversized t-shirt with arthouse art</h2>
-									<span class="item-basket__size">3xl</span>
+									<span class="item-basket__size">3xl</span>,
+									<span class="item-basket__color">green</span>
 								</div>
 								<div class="item-basket__quantity">
-									<div class="quantity" data-quantity-max="2">
+									<div class="quantity">
 										<button type="button" class="quantity__button quantity__button_minus" disabled>-</button>
 										<div class="quantity__input">
 											<input autocomplete="off" type="text" name="form[]" value="1">
@@ -148,43 +210,7 @@
 											<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
 										</svg>
 									</button>
-									<button class="item-basket__delete delete _icon-del" type="submit" aria-label="Delete"></button>
-								</div>
-							</div>
-						</div>
-
-						<div class="body-basket__item item-basket">
-							<div class="item-basket__check">
-								<div class="checkbox">
-									<input id="c_2" class="checkbox__input" type="checkbox" value="2" name="form[]">
-									<label for="c_2" class="checkbox__label"></label>
-								</div>
-							</div>
-							<div class="item-basket__img item-basket__img-ibg">
-								<img src="img/1x1.png" data-src="img/catalog/3.jpg" alt="">
-							</div>
-							<div class="item-basket__body">
-								<div class="item-basket__header">
-									<h2 class="item-basket__title">Grandpa’s oversized t-shirt with arthouse art</h2>
-									<span class="item-basket__size">3xl</span>
-								</div>
-								<div class="item-basket__quantity">
-									<div class="quantity" data-quantity-max="8">
-										<button type="button" class="quantity__button quantity__button_minus" disabled>-</button>
-										<div class="quantity__input">
-											<input autocomplete="off" type="text" name="form[]" value="1">
-										</div>
-										<button type="button" class="quantity__button quantity__button_plus">+</button>
-									</div>
-								</div>
-								<span class="item-basket__price price">300</span>
-								<div class="item-basket__actions">
-									<button class="item-basket__favourites favorite-btn" aria-label="Add to Favorites">
-										<svg class="favorite-btn__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-										</svg>
-									</button>
-									<button class="item-basket__delete delete _icon-del" type="submit" aria-label="Delete"></button>
+									<button class="item-basket__delete delete _icon-del" type="submit" aria-label="Delete" onclick="showPopupMessage('pop-remove')"></button>
 								</div>
 							</div>
 						</div>
@@ -254,7 +280,7 @@
 				</nav>
 
 				<div class="footer__right">
-					<a href="#" class="footer__logo logo"><img src="img/logo.svg" alt="Logo"></a>
+					<a href="#" class="footer__logo logo"><img src="img/logo-footer.svg" alt="Logo"></a>
 					<ul class="footer__socials socials">
 						<li><a href="#" class="_icon-facebook"></a></li>
 						<li><a href="#" class="_icon-youtube"></a></li>
@@ -266,13 +292,116 @@
 		</footer>
 
 	</div>
+	<div class="pop-message" id="pop-add">Product added to cart!</div>
+	<div class="pop-message" id="pop-remove">Product removed from cart!</div>
 
-	<div class="pop-message pop-message--add">Product added to cart!</div>
-	<div class="pop-message pop-message--remove">Product removed from cart!</div>
-	<div class="pop-message pop-message--add">Product added to cart!</div>
-	<div class="pop-message pop-message--remove">Product removed from cart!</div>
+	<script src="js/app.min.js?_v=20241105135431"></script>
 
-	<script src="js/app.min.js?_v=20241103041653"></script>
+	<script>
+		// избранное
+		document.querySelectorAll('.favorite-btn').forEach(button => {
+			button.addEventListener('click', function() {
+				button.classList.toggle('favorite-btn--active');
+			});
+		});
+
+
+
+		//поиск
+		document.addEventListener("DOMContentLoaded", function() {
+			const searchInput = document.querySelector(".search__input");
+			const searchBlock = document.querySelector(".search__block");
+
+			searchInput.addEventListener("input", function() {
+				if (searchInput.value.length >= 2) {
+					searchBlock.classList.add("search__block--active");
+					searchBlock.style.display = "block";
+				} else {
+					searchBlock.classList.remove("search__block--active");
+					searchBlock.style.display = "none";
+				}
+			});
+			document.addEventListener("click", function(event) {
+				if (!searchInput.contains(event.target) && !searchBlock.contains(event.target)) {
+					searchBlock.classList.remove("search__block--active");
+					searchBlock.style.display = "none";
+				}
+			});
+
+			searchInput.addEventListener("focus", function() {
+				if (searchInput.value.length >= 2) {
+					searchBlock.classList.add("search__block--active");
+					searchBlock.style.display = "block";
+				}
+			});
+		});
+
+
+		//попап на карточке товара
+
+		document.addEventListener("DOMContentLoaded", function() {
+			const basketCards = document.querySelectorAll(".card");
+
+			basketCards.forEach((basketCard) => {
+				const basketIcon = basketCard.querySelector(".basket-card__icon");
+				const overlay = basketCard.querySelector(".basket-card__overlay");
+
+				function toggleBasketCardActive() {
+					basketCard.classList.toggle("basket-card--active");
+					overlay.style.display = basketCard.classList.contains("basket-card--active") ? "block" : "none";
+				}
+
+				basketIcon.addEventListener("click", function(event) {
+					event.stopPropagation();
+					toggleBasketCardActive();
+				});
+
+				overlay.addEventListener("click", function() {
+					basketCard.classList.remove("basket-card--active");
+					overlay.style.display = "none";
+				});
+			});
+		});
+
+
+
+
+
+
+		// категории
+
+		document.addEventListener("DOMContentLoaded", function() {
+			// const categoryListContainer = document.querySelector(".category-list-container");
+			const menu = document.querySelector(".menu");
+			const toggleBtn = document.querySelector(".menu__toggle-btn");
+
+			toggleBtn.addEventListener("click", function() {
+				toggleBtn.classList.toggle("active");
+				menu.classList.toggle("menu--open");
+			});
+		});
+
+
+		// всплывашки
+		function showPopupMessage(messageId) {
+			const message = document.getElementById(messageId);
+
+			if (message) {
+				// Убираем класс активности с любых сообщений, если нужно
+				document.querySelectorAll('.pop-message').forEach((msg) => {
+					msg.classList.remove('pop-message--active');
+				});
+
+				// Добавляем класс активности к нужному сообщению
+				message.classList.add('pop-message--active');
+
+				// Убираем сообщение через 2 секунды
+				setTimeout(() => {
+					message.classList.remove('pop-message--active');
+				}, 2000);
+			}
+		}
+	</script>
 </body>
 
 </html>
